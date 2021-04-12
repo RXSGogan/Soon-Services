@@ -1,0 +1,35 @@
+.section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    overflow: hidden;
+}
+
+#logo {
+    border-left: 0;
+    width: 40%;
+    height: 100%;
+    margin-top: 25%;
+    z-index: 1;
+}
+
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: ;
+    z-index: -1;
+}
+
+#header {
+    z-index: 1;
+}
+
+.site-footer {
+    z-index: 1;
+}

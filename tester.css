@@ -1,47 +1,47 @@
-.video-container{
+.video{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-    display: none;
+    height: 100%;
+    object-fit: cover;
     z-index: -1;
-    overflow: hidden;
+    opacity: 0;
 }
-.row {
-    z-index: 1;
+​
+/* Use the "Sibling" selector since the video is now in the same row as the .logo and works with :hover */
+.logo:hover ~ .video{
+    opacity: 1;
 }
-.row div p {
-    font-size: 20px;
-    text-align: center;
-    color: black;
-    margin-top: 50px;
-    z-index: 1;
-}
-.row div h1 {
-    font-size: 20px;
-    text-align: left;
-    color: black;
-    margin-top: 5px;
-    z-index: 1;
-}
+​
 #middle {
     margin-top: 18%;
-
-}
-.section {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-.logo:onMouseover .video-container{
-    display: bloc;
 }
 
-.logo:onMouseover + .icon{
-    color: black;
-}
+.video2 {
+    background-image: url("/images/Soon_Logo_Homepage_Black.png");
+    background-repeat: no-repeat;
+    height: 330px;
+    width: 600px;
+    margin-bottom: 50px;
+    opacity: 1;
+  }
+.video2:hover{
+    background-image: url("/images/Soon_Logo_Homepage_White.png");
+    background-repeat: no-repeat;
+    height: 330px;
+    width: 600px;
+    margin-bottom: 50px;
+    opacity: 1;
+  }
+  .thevideo {
+      max-width: 700px;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+  }

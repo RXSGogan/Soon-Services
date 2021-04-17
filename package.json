@@ -2,7 +2,7 @@
   "name": "soon-services",
   "version": "1.0.0",
   "description": "This is a website for soon services.",
-  "main": "soon.html",
+  "main": "index.html",
   "scripts": {
     "lite": "lite-server",
     "start": "npm run lite",

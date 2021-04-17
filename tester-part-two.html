@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+​
+    <link rel="stylesheet" href="tester-part-two.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+​
+    <title>SOON Services</title>
+</head>
+<body>
+    <!-- vh-100 will stretch the whole section wrapper to the viewport height -->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <!-- You can use bootstrap classed like h4 to size it in HTML instead of CSS...just an option -->
+                <h1 class="h4 m-3"></h1>
+            </div>
+        </div>
+        <!-- alighn-items-center aligns the content vertically inside the row. Justify-content-between takes columns inside the row and puts space between it
+                if you have 2 cols then it pushes it to the opposite sides. if you have more it will evenly space it-->
+        <div id="middle" class="row align-items-center justify-content-between">
+            <div class="logo col-1 col">
+                <img src="/images/Soon_Logo_Homepage_White.png" alt="soon logo" />
+            </div>
+            <!-- removed the empty div since you no longer need to create empty space. Thanks for justify-content-* -->
+            <!-- Used bootstrap classes to make it responsive so the col below snaps under the col on top when smaller viewports -->
+            <div class="col col-md-4 my-4 text-md-left">
+                <div class="ny-p row">
+                    <div class="col text-center">
+                        NEW YORK - PARIS
+                    </div>
+                    <div class="col">
+                        hello@soon.services
+                    </div>
+                </div>
+            </div>
+            <!-- No need for the video-container anymore -->
+            <!-- THE KEY TO THE HOVER WORKING - The video element needs to be after the hover element (.logo). Just placed at the end of the same row
+                that the .logo is contained in-->
+            <video autoplay muted loop class="video">
+                <source src="/videos/Soon Web Reel V1_2.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </section>
+​
+</body>
+</html>

@@ -10,12 +10,10 @@
 }
 ​
 /* Use the "Sibling" selector since the video is now in the same row as the .logo and works with :hover */
-.logo:hover ~ .video{
-    opacity: 1;
-}
+
 ​
 #middle {
-    margin-top: 18%;
+    margin-top: ;
 }
 
 .video2 {
@@ -24,6 +22,7 @@
     height: 330px;
     width: 600px;
     margin-bottom: 50px;
+    margin-top: 250px;
     opacity: 1;
   }
 .video2:hover{
@@ -35,7 +34,6 @@
     opacity: 1;
   }
   .thevideo {
-      max-width: 700px;
       overflow: hidden;
       position: absolute;
       top: 0;
@@ -44,4 +42,13 @@
       height: 100%;
       object-fit: cover;
       z-index: -1;
+  }
+
+  .logo-2 {
+      text-align: left;
+      margin-top: 0px
+  }
+
+  .logo-3 {
+      text-align: right;
   }

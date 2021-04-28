@@ -11,22 +11,36 @@
     <title>SOON Services</title>
 </head>
 <body>
-    <!-- vh-100 will stretch the whole section wrapper to the viewport height -->
+
     <section class="container-fluid vh-100">
+
         <div class="row">
             <div class="col">
                 <!-- You can use bootstrap classed like h4 to size it in HTML instead of CSS...just an option -->
-                <h1 class="h4 m-3"></h1>
+                <h1 class="m-3"></h1>
             </div>
         </div>
-        <!-- alighn-items-center aligns the content vertically inside the row. Justify-content-between takes columns inside the row and puts space between it
-                if you have 2 cols then it pushes it to the opposite sides. if you have more it will evenly space it-->
+
         <div class="row align-items-center justify-content-between">
             <div class="video2">
                 <video class="thevideo" loop preload="none">
                   <source src="/videos/Soon Web Reel V1_2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video>
+            </div>
+            <div id="" class="col quotes text-center">
+                <p><strong>SOON IS AN INDEPENDENT CREATIVE STUDIO
+                    <br>BASED IN NEW YORK & PARIS.</strong>
+                </p>
+                <h1>"A feeling, a way of seeing
+                    <br>A lingering curiosity, a doorway between now and then
+                    <br>Believing in movement as the only constant
+                    <br>A space in between, where hope and vision bloom."
+                </h1>
+                <p><strong>FOR ANY INQUIRIES PLEASE EMAIL US.
+                    <br>SPEAK SOON.
+                </strong>
+                </p>
             </div>
             <!-- Used bootstrap classes to make it responsive so the col below snaps under the col on top when smaller viewports -->
             <div class="col col-md-4 my-4 text-center text-md-left">
@@ -42,7 +56,11 @@
             <video autoplay muted loop class="video">
                 <source src="/videos/Soon Web Reel V1_2.mp4" type="video/mp4" />
             </video>
+        </div>
 
+        <div class="row">
+            
+        </div>
     </section>
 ​
 <script>
@@ -51,7 +69,6 @@
 
     function hoverVideo(e) {  
         console.log("hover over");
-        console.dir(document.querySelector(".thevideo"))
         document.querySelector('.thevideo').style.display = ""; 
         document.querySelector('.thevideo').play(); 
         document.querySelector('.video2').src = "/images/Soon_Logo_Homepage_White.png"; 
@@ -62,6 +79,15 @@
         document.querySelector('.video2').src = "/images/Soon_Logo_Homepage_Black.png";
         document.querySelector('.thevideo').pause(); 
         document.querySelector('.thevideo').style.display = "none"; 
+    }
+</script>
+
+<script>
+    document.querySelector(".logo-2").addEventListener("mouseover", hoverQuote);
+    document.querySelector('.logo-2').addEventListener("mouseout", hideQuote);
+
+    function hoverQuote(e) {
+        document.querySelector('.')
     }
 </script>
 

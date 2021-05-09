@@ -10,16 +10,10 @@
 ​
     <title>SOON Services</title>
 </head>
+
 <body>
 
-    <section class="container-fluid vh-100">
-
-        <div class="row">
-            <div class="col">
-                <!-- You can use bootstrap classed like h4 to size it in HTML instead of CSS...just an option -->
-                <h1 class="m-3"></h1>
-            </div>
-        </div>
+    <section class="container-fluid">
 
         <div class="row align-items-center justify-content-between">
             <div class="video2">
@@ -53,9 +47,7 @@
                     </div>
                 </div>
             </div>
-            <video autoplay muted loop class="video">
-                <source src="/videos/Soon Web Reel V1_2.mp4" type="video/mp4" />
-            </video>
+
         </div>
 
     </section>
@@ -73,9 +65,9 @@
 
     function hideVideo(e) {
         console.log("hover off");
-        document.querySelector('.video2').src = "/images/Soon_Logo_Homepage_Black.png";
         document.querySelector('.thevideo').pause(); 
-        document.querySelector('.thevideo').style.display = "none"; 
+        document.querySelector('.thevideo').style.display = "none";
+        document.querySelector('.video2').src = "/images/Soon_Logo_Homepage_Black.png";
     }
 </script>
 
@@ -84,7 +76,13 @@
     document.querySelector('.logo-2').addEventListener("mouseout", hideQuote);
 
     function hoverQuote(e) {
-        document.querySelector('.')
+        console.log("quote on");
+        document.querySelector('.quotes').style.display = "";
+    }
+
+    function hideQuote(e) {
+        console.log("quote off");
+        document.querySelector('.quotes').style.display = "none"
     }
 </script>
 

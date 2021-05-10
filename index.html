@@ -16,12 +16,13 @@
     <section class="container-fluid">
 
         <div class="row align-items-center justify-content-between">
-            <div class="video2">
-                <video class="thevideo" loop preload="none">
-                  <source src="/videos/Soon Web Reel V1_2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
+            <div class="video2 col">
+
             </div>
+            <video class="thevideo" loop preload="none">
+                <source src="/videos/Soon Web Reel V1_2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
             <div class="col quotes overlay-text text-center">
                 <p><strong>SOON IS AN INDEPENDENT CREATIVE STUDIO
                     <br>BASED IN NEW YORK & PARIS.</strong>
@@ -60,7 +61,8 @@
         console.log("hover over");
         document.querySelector('.thevideo').style.display = ""; 
         document.querySelector('.thevideo').play(); 
-        document.querySelector('.video2').src = "/images/Soon_Logo_Homepage_White.png"; 
+        document.querySelector('.video2').src = "/images/Soon_Logo_Homepage_White.png";
+        document.querySelector('.logo-2').text.color = white;
     }
 
     function hideVideo(e) {

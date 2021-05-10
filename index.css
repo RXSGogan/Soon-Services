@@ -27,7 +27,7 @@ body {
     width: 00px;
     overflow: hidden;
     margin-bottom: 250px;
-    margin-top: 250px;
+    margin-top: 270px;
     margin-left: -200px;
     transform: scale(.6);
     borde: 5px solid orange;
@@ -41,7 +41,7 @@ body {
     overflow: hidden;
     margin-bottom: 250px;
     opacity: 1;
-    transfor: scale(.5);
+    transform: scale(.6);
   }
 }
 
@@ -57,7 +57,7 @@ body {
     margin-left: 50px;
     opacity: 1;
     transform: scale(.25);
-    border: 1px solid orange;
+    borde: 1px solid orange;
     }
 
 .video2:hover{
@@ -100,6 +100,10 @@ body {
     font-family: Maxeville-Regular;
 }
 
+a:link {
+    color: black;
+}
+
 .quotes {
     position: absolute;
     z-index: -5;
@@ -108,7 +112,7 @@ body {
     overflow: hidden;
     height: 100%;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 60px;
     margin-left: -840px;
     margin-right: -300px;
     font-family: ;
@@ -117,9 +121,9 @@ body {
 }
 
 .row {
-   border : 4px solid greenyellow;
+   borde : 4px solid greenyellow;
 }
 
 .col {
-   border : 2px solid blue
+   borde : 2px solid blue
 }

@@ -32,6 +32,7 @@
                     <br>Believing in movement as the only constant
                     <br>A space in between, where hope and vision bloom."
                 </h1>
+                <br>
                 <p><strong>FOR ANY INQUIRIES PLEASE EMAIL US.
                     <br>SPEAK SOON.
                 </strong>
@@ -44,7 +45,7 @@
                         NEW YORK • PARIS
                     </div>
                     <div class="logo-3 col">
-                        <a href="mailto:hello@soon.services">hello@soon.services</a>
+                        <a href="mailto:hello@soon.services" id="email">hello@soon.services</a>
                     </div>
                 </div>
             </div>
@@ -62,7 +63,8 @@
         document.querySelector('.thevideo').style.display = ""; 
         document.querySelector('.thevideo').play(); 
         document.querySelector('.video2').src = "/images/Soon_Logo_Homepage_White.png";
-        document.querySelector('.logo-2').text.color = white;
+        document.querySelector('.logo-2').style.color = "#ffffff";
+        document.querySelector('#email').style.color = "#ffffff";
     }
 
     function hideVideo(e) {
@@ -70,6 +72,8 @@
         document.querySelector('.thevideo').pause(); 
         document.querySelector('.thevideo').style.display = "none";
         document.querySelector('.video2').src = "/images/Soon_Logo_Homepage_Black.png";
+        document.querySelector('.logo-2').style.color = "#000000";
+        document.querySelector('#email').style.color = "#000000";
     }
 </script>
 

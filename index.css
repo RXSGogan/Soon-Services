@@ -13,10 +13,15 @@
     font-family: Maxeville-Italic;
 }
 
+@font-face {
+    src: url(/fonts/Rhymes-RegularDisplay.otf);
+    font-family: Rhymes-Regular;
+}
+
 body {
     margin: 0;
     height: 100vh;
-    cursor: url();
+    cursor: url('./images/cursor_PNG102-ORANGE-2.png'), auto;
 }
 
 @media only screen and (min-width: 600px) {
@@ -24,13 +29,11 @@ body {
     background-image: url("/images/Soon_Logo_Homepage_Black.png");
     background-repeat: no-repeat;
     height: 150px;
-    width: 00px;
     overflow: hidden;
     margin-bottom: 250px;
     margin-top: 270px;
-    margin-left: -200px;
+    margin-left: -60px;
     transform: scale(.6);
-    borde: 5px solid orange;
     padding: 0;
   }
 
@@ -40,7 +43,6 @@ body {
     height: 150px;
     overflow: hidden;
     margin-bottom: 250px;
-    opacity: 1;
     transform: scale(.6);
   }
 }
@@ -54,10 +56,9 @@ body {
     overflow: hidden;
     margin-bottom: 50px;
     margin-top: 250px;
-    margin-left: 50px;
+    margin-left: -30px;
     opacity: 1;
     transform: scale(.25);
-    borde: 1px solid orange;
     }
 
 .video2:hover{
@@ -69,7 +70,6 @@ body {
     margin-bottom: 50px;
     opacity: 1;
     transform: scale(.25);
-
     }
 }
 
@@ -97,10 +97,22 @@ body {
     text-align: right;
     margin-right: 25px;
     margin-bottom: 50px;
-    font-family: Maxeville-Regular;
+    font-family: Rhymes-Regular;
 }
 
 a:link {
+    color: black;
+}
+
+a:visited {
+    color: orange;
+}
+
+a:hover {
+    color: orange;
+}
+
+a:active {
     color: black;
 }
 
@@ -113,17 +125,21 @@ a:link {
     height: 100%;
     width: 100%;
     margin-top: 60px;
-    margin-left: -840px;
-    margin-right: -300px;
-    font-family: ;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: Rhymes-Regular;
     border: 0;
     padding: 0;
 }
 
+.container-fluid {
+    border: 4px solid red;
+}
+
 .row {
-   borde : 4px solid greenyellow;
+   border : 4px solid greenyellow;
 }
 
 .col {
-   borde : 2px solid blue
+   border : 2px solid blue
 }

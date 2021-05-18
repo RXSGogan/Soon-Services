@@ -13,10 +13,10 @@
 
 <body>
 
-    <section class="container-fluid">
+    <div class="container-fluid">
 
         <div class="row align-items-center justify-content-between">
-            <div class="video2 col">
+            <div class="video2 col col-md-4">
 
             </div>
             <video class="thevideo" loop preload="none">
@@ -52,45 +52,58 @@
 
         </div>
 
-    </section>
+    </div>
+
+    <script>
+
+        var body = document.getElementById('body');
+        var audio = document.getElementById('.thevideo');
+
+        var loadData = function () {
+            thevideo.load();
+        };
+
+        body.addEventListener('ontouchstart', loadData, false);
+
+    </script>
 ​
-<script>
-    document.querySelector(".video2").addEventListener("mouseover", hoverVideo);
-    document.querySelector(".video2").addEventListener("mouseout", hideVideo);
+    <script>
+        document.querySelector(".video2").addEventListener("mouseover", hoverVideo);
+        document.querySelector(".video2").addEventListener("mouseout", hideVideo);
 
-    function hoverVideo(e) {  
-        console.log("hover over");
-        document.querySelector('.thevideo').style.display = ""; 
-        document.querySelector('.thevideo').play(); 
-        document.querySelector('.video2').src = "/images/Soon_Logo_Homepage_White.png";
-        document.querySelector('.logo-2').style.color = "#ffffff";
-        document.querySelector('#email').style.color = "#ffffff";
-    }
+        function hoverVideo(e) {  
+            console.log("hover over");
+            document.querySelector('.thevideo').style.display = ""; 
+            document.querySelector('.thevideo').play(); 
+            document.querySelector('.video2').src = "/images/Soon_Logo_Homepage_White.png";
+            document.querySelector('.logo-2').style.color = "#ffffff";
+            document.querySelector('#email').style.color = "#ffffff";
+        }
 
-    function hideVideo(e) {
-        console.log("hover off");
-        document.querySelector('.thevideo').pause(); 
-        document.querySelector('.thevideo').style.display = "none";
-        document.querySelector('.video2').src = "/images/Soon_Logo_Homepage_Black.png";
-        document.querySelector('.logo-2').style.color = "#000000";
-        document.querySelector('#email').style.color = "#000000";
-    }
-</script>
+        function hideVideo(e) {
+            console.log("hover off");
+            document.querySelector('.thevideo').pause(); 
+            document.querySelector('.thevideo').style.display = "none";
+            document.querySelector('.video2').src = "/images/Soon_Logo_Homepage_Black.png";
+            document.querySelector('.logo-2').style.color = "#000000";
+            document.querySelector('#email').style.color = "#000000";
+        }
+    </script>
 
-<script>
-    document.querySelector(".logo-2").addEventListener("mouseover", hoverQuote);
-    document.querySelector('.logo-2').addEventListener("mouseout", hideQuote);
+    <script>
+        document.querySelector(".logo-2").addEventListener("mouseover", hoverQuote);
+        document.querySelector('.logo-2').addEventListener("mouseout", hideQuote);
 
-    function hoverQuote(e) {
-        console.log("quote on");
-        document.querySelector('.quotes').style.display = "";
-    }
+        function hoverQuote(e) {
+            console.log("quote on");
+            document.querySelector('.quotes').style.display = "";
+        }
 
-    function hideQuote(e) {
-        console.log("quote off");
-        document.querySelector('.quotes').style.display = "none"
-    }
-</script>
+        function hideQuote(e) {
+            console.log("quote off");
+            document.querySelector('.quotes').style.display = "none"
+        }
+    </script>
 
 </body>
 </html>

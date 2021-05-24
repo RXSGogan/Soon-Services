@@ -12,31 +12,32 @@
 </head>
 
 <body>
+    <video class="thevideo" autoplay muted loop>
+        <source src="/videos/Soon Web Reel V1_2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="quotes text-center">
+        <p><strong>SOON IS AN INDEPENDENT CREATIVE STUDIO
+            <br>BASED IN NEW YORK & PARIS.</strong>
+        </p>
+        <h1>"A feeling, a way of seeing
+            <br>A lingering curiosity, a doorway between now and then
+            <br>Believing in movement as the only constant
+            <br>A space in between, where hope and vision bloom."
+        </h1>
+        <br>
+        <p><strong>FOR ANY INQUIRIES PLEASE EMAIL US.
+            <br>SPEAK SOON.
+        </strong>
+        </p>
+    </div>
 
     <div class="container-fluid">
 
         <div class="row align-items-center justify-content-between">
             <div class="video2 col col-md-4">
 
-            </div>
-            <video class="thevideo" loop preload="none">
-                <source src="/videos/Soon Web Reel V1_2.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <div class="col quotes overlay-text text-center">
-                <p><strong>SOON IS AN INDEPENDENT CREATIVE STUDIO
-                    <br>BASED IN NEW YORK & PARIS.</strong>
-                </p>
-                <h1>"A feeling, a way of seeing
-                    <br>A lingering curiosity, a doorway between now and then
-                    <br>Believing in movement as the only constant
-                    <br>A space in between, where hope and vision bloom."
-                </h1>
-                <br>
-                <p><strong>FOR ANY INQUIRIES PLEASE EMAIL US.
-                    <br>SPEAK SOON.
-                </strong>
-                </p>
             </div>
             <!-- Used bootstrap classes to make it responsive so the col below snaps under the col on top when smaller viewports -->
             <div class="col col-md-4 my-4 text-center text-md-left">
@@ -54,18 +55,6 @@
 
     </div>
 
-    <script>
-
-        var body = document.getElementById('body');
-        var audio = document.getElementById('.thevideo');
-
-        var loadData = function () {
-            thevideo.load();
-        };
-
-        body.addEventListener('ontouchstart', loadData, false);
-
-    </script>
 ​
     <script>
         document.querySelector(".video2").addEventListener("mouseover", hoverVideo);
@@ -73,9 +62,8 @@
 
         function hoverVideo(e) {  
             console.log("hover over");
-            document.querySelector('.thevideo').style.display = ""; 
+            document.querySelector('.thevideo').style.visibility = "visible"; 
             document.querySelector('.thevideo').play(); 
-            document.querySelector('.video2').src = "/images/Soon_Logo_Homepage_White.png";
             document.querySelector('.logo-2').style.color = "#ffffff";
             document.querySelector('#email').style.color = "#ffffff";
         }
@@ -83,8 +71,7 @@
         function hideVideo(e) {
             console.log("hover off");
             document.querySelector('.thevideo').pause(); 
-            document.querySelector('.thevideo').style.display = "none";
-            document.querySelector('.video2').src = "/images/Soon_Logo_Homepage_Black.png";
+            document.querySelector('.thevideo').style.visibility = "hidden";
             document.querySelector('.logo-2').style.color = "#000000";
             document.querySelector('#email').style.color = "#000000";
         }
@@ -96,12 +83,13 @@
 
         function hoverQuote(e) {
             console.log("quote on");
-            document.querySelector('.quotes').style.display = "";
+            document.querySelector('.quotes').style.display = "block";
+            document.querySelector('.quotes').style.zIndex = "2";
         }
 
         function hideQuote(e) {
             console.log("quote off");
-            document.querySelector('.quotes').style.display = "none"
+            document.querySelector('.quotes').style.display = "";
         }
     </script>
 

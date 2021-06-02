@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="soon.css">
+​
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <title>SOON</title>
+​
+    <title>SOON Services</title>
 </head>
+
 <body>
     <video class="thevideo" autoplay muted loop>
         <source src="/videos/Soon Web Reel V1_2.mp4" type="video/mp4">
@@ -16,53 +18,46 @@
     </video>
 
     <div class="quotes text-center">
-        <div class="quotes-2">
-            <p><strong>SOON IS AN INDEPENDENT CREATIVE STUDIO
-                <br>BASED IN NEW YORK & PARIS.</strong>
-            </p>
-        </div>
+        <p><strong>SOON IS AN INDEPENDENT CREATIVE STUDIO
+            <br>BASED IN NEW YORK & PARIS.</strong>
+        </p>
         <h1>"A feeling, a way of seeing
             <br>A lingering curiosity, a doorway between now and then
             <br>Believing in movement as the only constant
             <br>A space in between, where hope and vision bloom."
         </h1>
         <br>
-        <div class="quotes-2">
-            <p><strong>FOR ANY INQUIRIES PLEASE EMAIL US.
-                <br>SPEAK SOON.
-            </strong>
-        </div>
+        <p><strong>FOR ANY INQUIRIES PLEASE EMAIL US.
+            <br>SPEAK SOON.
+        </strong>
         </p>
     </div>
 
     <div class="container-fluid my-container">
-        <div class="row">
-            <div class="col my-col logo-1">ABOUT</div>
+
+        <div class="row logo-labels align-items-center justify-content-between">
+            <div class="video2 col-11 col-md-3">
+
+            </div>
+                    <div class="logo-2 col">
+                        NEW YORK • PARIS
+                    </div>
+                    <div class="logo-3 col">
+                        <a href="mailto:hello@soon.services" id="email">hello@soon.services</a>
+                    </div>
         </div>
-        <div class="row my-row align-items-center justify-content-between">
-            <div class="col-11 col-sm-3 my-col video2">
-                
-            </div>
-            <div class="col-4 offset-sm-4 col-sm-2 my-col logo-2">
-                NEW YORK • PARIS
-            </div>
-            <div class="col-4 col-sm-2 my-col logo-3">
-                <a href="mailto:hello@soon.services" id="email">hello@soon.services</a>
-            </div>
-        </div>
+
     </div>
 
+​
     <script>
         document.querySelector(".video2").addEventListener("mouseover", hoverVideo);
         document.querySelector(".video2").addEventListener("mouseout", hideVideo);
-        document.querySelector(".video2").addEventListener("touchstart", hoverVideo);
-        document.querySelector(".video2").addEventListener("touchend", hideVideo);
 
         function hoverVideo(e) {  
             console.log("hover over");
             document.querySelector('.thevideo').style.visibility = "visible"; 
-            document.querySelector('.thevideo').play();
-            document.querySelector('.logo-1').style.color = "#ffffff"; 
+            document.querySelector('.thevideo').play(); 
             document.querySelector('.logo-2').style.color = "#ffffff";
             document.querySelector('#email').style.color = "#ffffff";
         }
@@ -71,7 +66,6 @@
             console.log("hover off");
             document.querySelector('.thevideo').pause(); 
             document.querySelector('.thevideo').style.visibility = "hidden";
-            document.querySelector('.logo-1').style.color = "#000000";
             document.querySelector('.logo-2').style.color = "#000000";
             document.querySelector('#email').style.color = "#000000";
         }
@@ -80,8 +74,6 @@
     <script>
         document.querySelector(".logo-2").addEventListener("mouseover", hoverQuote);
         document.querySelector('.logo-2').addEventListener("mouseout", hideQuote);
-        document.querySelector(".logo-1").addEventListener("touchstart", hoverQuote);
-        document.querySelector('.logo-1').addEventListener("touchend", hideQuote);
 
         function hoverQuote(e) {
             console.log("quote on");
@@ -94,5 +86,6 @@
             document.querySelector('.quotes').style.display = "";
         }
     </script>
+
 </body>
 </html>

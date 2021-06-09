@@ -21,11 +21,13 @@
                 <br>BASED IN NEW YORK & PARIS.</strong>
             </p>
         </div>
-        <h1>"A feeling, a way of seeing
-            <br>A lingering curiosity, a doorway between now and then
-            <br>Believing in movement as the only constant
-            <br>A space in between, where hope and vision bloom."
-        </h1>
+        <div class="quotes-3">
+            <p>"A feeling, a way of seeing
+                <br>A lingering curiosity, A doorway between now and then
+                <br>Believing in movement as the only constant
+                <br>A space in between, where hope and vision bloom."
+            </p>
+        </div>
         <br>
         <div class="quotes-2">
             <p><strong>FOR ANY INQUIRIES PLEASE EMAIL US.
@@ -82,6 +84,8 @@
         document.querySelector('.logo-2').addEventListener("mouseout", hideQuote);
         document.querySelector(".logo-1").addEventListener("touchstart", hoverQuote);
         document.querySelector('.logo-1').addEventListener("touchend", hideQuote);
+        document.querySelector(".logo-2").addEventListener("touchstart", hoverQuote);
+        document.querySelector('.logo-2').addEventListener("touchend", hideQuote);
 
         function hoverQuote(e) {
             console.log("quote on");

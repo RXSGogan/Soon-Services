@@ -54,16 +54,21 @@ body {
   overflow: hidden;
   width: 100%;
   max-height: 100%;
-  top: 55%;
+  top: 57%;
   left: 49%;
   transform: translate(-50%, -50%);
   font-family: Rhymes-Regular;
-  padding: 0;
-  display: non;
+  padding: 4vw;
+  display: none;
 }
 
 .quotes-2 {
   font-family: Maxeville-Bold;
+  font-size: 1.1vw;
+}
+
+.quotes-3 {
+  font-size: 2.7vw;
 }
 
 a:link {
@@ -71,7 +76,7 @@ a:link {
 }
 
 a:hover {
-  color: orange;
+  color: #d3401e;
 }
 
 @media only screen and (min-width: 768px) {
@@ -103,18 +108,18 @@ a:hover {
     margin-left: 0px;
     margin-bottom: 20px;
     text-align: right;
-}
+  }
 
-.logo-3 {
-    display: inline-block;
-    text-align: right;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    font-family: Rhymes-Regular;
-    margin-bottom: 20px;
-    margin-right: 30px;
-    text-align: right;
-}
+  .logo-3 {
+      display: inline-block;
+      text-align: right;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      font-family: Rhymes-Regular;
+      margin-bottom: 20px;
+      margin-right: 30px;
+      text-align: right;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -154,14 +159,23 @@ a:hover {
     text-align: left;
 }
 
-.logo-3 {
-    display: inline-block;
-    text-align: right;
-    margin-right: 20px;
-    font-family: Rhymes-Regular;
-    font-size: 12px;
-    margin-bottom: 20px;
-    align-self: flex-end;
-    text-align: right;
-}
+  .logo-3 {
+      display: inline-block;
+      text-align: right;
+      margin-right: 20px;
+      font-family: Rhymes-Regular;
+      font-size: 12px;
+      margin-bottom: 20px;
+      align-self: flex-end;
+      text-align: right;
+  }
+
+  .quotes-2 {
+    font-family: Maxeville-Bold;
+    font-size: 3.5vw;
+  }
+
+  .quotes-3 {
+    font-size: 6.5vw;
+  }
 }

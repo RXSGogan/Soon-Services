@@ -124,8 +124,13 @@ a:hover {
 
 @media only screen and (max-width: 768px) {
   .footer-items {
-    padding-top: 13em;
+    padding-top: 14em;
   }
+.soon-logo {
+  height: 73px;
+  width: 241px;
+}
+
   /*
   .video2 {
     background-image: url("/images/Soon_Logo_Homepage_Black_25.png");

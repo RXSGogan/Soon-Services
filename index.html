@@ -33,23 +33,25 @@
           <br />
           <br />
           <div class="row">
-            <div class="my-5 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 video2">
-              <h1 class="text-left alt-txt" id="soon-logo">SOON</h1>
+            <div class="my-5 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 video2">
+              
+              <img src="./images/Soon_Logo_Homepage_Black.png" alt="Girl in a jacket" 
+              onmouseover="this.src='./images/Soon_Logo_Homepage_White.png';" onmouseout="this.src='./images/Soon_Logo_Homepage_Black.png';">
+
             </div>
             <div
               class="
-                my-5 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6
+                my-5 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4
                 d-flex
                 align-items-center
                 justify-content-between
                 footer-items
               "
             >
-              <div><p class="alt-txt" id="cities">NEW YORK • PARIS</p></div>
+              <div><a class="alt-txt2"><p>NEW YORK • PARIS</p></a></div>
               <div>
                 <a href="mailto:hello@soon.services" id="email"
-                  ><p class="alt-txt">hello@soon.services</p></a
-                >
+                  ><p class="alt-txt">hello@soon.services</p></a>
               </div>
             </div>
           </div>
@@ -76,9 +78,8 @@
         document.querySelector(".thevideo").style.visibility = "visible";
         document.querySelector(".thevideo").play();
         document.querySelector(".alt-txt").style.color = "#ffffff";
+        document.querySelector(".alt-txt2").style.color = "#ffffff";
         document.querySelector("#email").style.color = "#ffffff";
-        document.querySelector("#soon-logo").style.color = "#ffffff";
-        document.querySelector("#cities").style.color = "#ffffff";
       }
 
       function hideVideo(e) {
@@ -86,9 +87,8 @@
         document.querySelector(".thevideo").pause();
         document.querySelector(".thevideo").style.visibility = "hidden";
         document.querySelector(".alt-txt").style.color = "#000000";
+        document.querySelector(".alt-txt2").style.color = "#000000";
         document.querySelector("#email").style.color = "#000000";
-        document.querySelector("#soon-logo").style.color = "#000000";
-        document.querySelector("#cities").style.color = "#000000";
       }
     </script>
 

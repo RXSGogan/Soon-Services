@@ -63,6 +63,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  /*
   .video2 {
     background-image: url("/images/Soon_Logo_Homepage_Black_60.png");
     background-repeat: no-repeat;
@@ -79,12 +80,13 @@ body {
     margin-left: 30px;
     height: 100px;
   }
+  */
 }
 
 @media only screen and (max-width: 768px) {
     /* .logo-labels { margin-top: 20vh;
     } if can figure out how to position logo centrally then can do this to have hover box cover above logo as well. */
-
+/*
   .video2 {
     background-image: url("/images/Soon_Logo_Homepage_Black_25.png");
     background-repeat: no-repeat;
@@ -102,7 +104,7 @@ body {
     overflow: hidden;
     opacity: 1;
   }
-
+*/
   .logo-2 {
     white-space: nowrap;
     text-align: left;

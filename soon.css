@@ -24,6 +24,7 @@ body {
   height: 100%;
   cursor: url("./images/cursor_PNG102-ORANGE-2.png"), auto;
 }
+
 .my-container {
   height: 100vh;
 }
@@ -170,9 +171,26 @@ a:hover {
       text-align: right;
   }
 
+  .quotes {
+    position: absolute;
+    z-index: -2;
+    color: #d3401e;
+    opacity: 1;
+    overflow: hidden;
+    width: 100%;
+    max-height: 100%;
+    top: 51%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    font-family: Rhymes-Regular;
+    padding: 6vw;
+    display: non;
+  }
+
   .quotes-2 {
     font-family: Maxeville-Bold;
     font-size: 3.5vw;
+    margin-bottom: 8vw;
   }
 
   .quotes-3 {

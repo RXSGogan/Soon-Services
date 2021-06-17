@@ -82,10 +82,12 @@
     <script>
         document.querySelector(".logo-2").addEventListener("mouseover", hoverQuote);
         document.querySelector('.logo-2').addEventListener("mouseout", hideQuote);
-        document.querySelector(".logo-1").addEventListener("touchstart", hoverQuote);
-        document.querySelector('.logo-1').addEventListener("touchend", hideQuote);
         document.querySelector(".logo-2").addEventListener("touchstart", hoverQuote);
         document.querySelector('.logo-2').addEventListener("touchend", hideQuote);
+        document.querySelector(".logo-1").addEventListener("mouseover", hoverQuote);
+        document.querySelector('.logo-1').addEventListener("mouseout", hideQuote);
+        document.querySelector(".logo-1").addEventListener("touchstart", hoverQuote);
+        document.querySelector('.logo-1').addEventListener("touchend", hideQuote);
 
         function hoverQuote(e) {
             console.log("quote on");
@@ -97,6 +99,20 @@
             console.log("quote off");
             document.querySelector('.quotes').style.display = "";
         }
+    </script>
+
+    <script>
+      document.querySelector(".logo-3").addEventListener("mouseover", emailHover);
+      document.querySelector(".logo-3").addEventListener("mouseout", emailUnHover);
+
+      function emailHover(e) {
+        console.log("emailon")
+        document.querySelector('logo-3').style.textColor = "#d3401e";
+      }
+
+      function emailUnHover(e) {
+        console.log("emailoff")
+      }
     </script>
 </body>
 </html>

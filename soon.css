@@ -164,9 +164,7 @@ div a:active {
     margin-left: 10px;
     margin-bottom: 20px;
     align-self: flex-end;
-    /* display: block; */
     text-align: left;
-    background-color:red;
 }
 
   .logo-3 {
